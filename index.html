@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Portfolio - Claims Product Owner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Mato - Claims Product Owner & Analyst Portfolio</title>
     <!-- Tailwind CSS CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-    body {
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Light blue-gray background */
-            color: #334155; /* Dark slate text */
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.5rem; /* Consistent padding */
+            background-color: #f8fafc; /* Light gray background */
         }
         .section-heading {
-            font-size: 2.5rem; /* Larger heading for sections */
-            font-weight: 700;
-            color: #1e293b; /* Darker heading color */
-            margin-bottom: 2rem;
-            text-align: center;
+            border-bottom: 2px solid #e2e8f0; /* Light gray border */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: #1e293b; /* Darker text */
         }
         .card {
             background-color: #ffffff;
@@ -32,198 +26,245 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 1.5rem;
         }
-        /* Custom scrollbar for better aesthetics, if needed for long content */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
+        .btn-primary {
+            background-color: #3b82f6; /* Blue */
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
         }
-        ::-webkit-scrollbar-track {
-            background: #cbd5e1; /* Light gray track */
-            border-radius: 10px;
+        .btn-primary:hover {
+            background-color: #2563eb; /* Darker blue */
         }
-        ::-webkit-scrollbar-thumb {
-            background: #94a3b8; /* Medium gray thumb */
-            border-radius: 10px;
+        .icon-link {
+            color: #64748b; /* Gray text */
+            transition: color 0.3s ease;
         }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #64748b; /* Darker gray on hover */
+        .icon-link:hover {
+            color: #3b82f6; /* Blue on hover */
         }
     </style>
 </head>
-<body class="antialiased">
+<body class="text-gray-700">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
 
-    <!-- Header Section -->
-    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-6 shadow-lg">
-        <div class="container flex flex-col sm:flex-row justify-between items-center">
-            <h1 class="text-4xl font-bold rounded-lg px-4 py-2 bg-white bg-opacity-10 shadow-md">Emmanuel Mato CIP, FCA, MBA</h1>
-            <nav class="mt-4 sm:mt-0">
-                <ul class="flex space-x-6">
-                    <li><a href="#about" class="hover:underline text-lg transition duration-300 ease-in-out hover:text-blue-200">About</a></li>
-                    <li><a href="#skills" class="hover:underline text-lg transition duration-300 ease-in-out hover:text-blue-200">Skills</a></li>
-                    <li><a href="#portfolio" class="hover:underline text-lg transition duration-300 ease-in-out hover:text-blue-200">Projects</a></li>
-                    <li><a href="#contact" class="hover:underline text-lg transition duration-300 ease-in-out hover:text-blue-200">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="about" class="bg-gray-100 py-20 px-6 sm:px-8 lg:px-12 text-center">
-        <div class="container">
-            <h2 class="text-5xl font-extrabold text-gray-900 mb-6 leading-tight rounded-xl bg-white bg-opacity-80 p-4 shadow-xl">
-    Experienced Claims Adjuster Transitioning to <span class="text-indigo-600">Claims Consultant</span>
-            </h2>
-            <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
-    Bringing a deep understanding of claims processes and customer needs to drive innovative product development, optimize vendor relationships, and enhance operational efficiency. 
-                
-                            </p>
-            <a href="#contact" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
-    Get in Touch
-            </a>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-16 px-6 sm:px-8 lg:px-12 bg-white">
-        <div class="container">
-            <h3 class="section-heading">My Strengths & Skills</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Skill Card 1 -->
-                <div class="card p-6 flex items-start space-x-4 bg-purple-50 hover:shadow-lg transition-shadow duration-300">
-                    <svg class="w-8 h-8 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Claims Product Ownership</h4>
-                        <p class="text-gray-600">Leveraging claims expertise to define product vision, roadmap, and requirements that meet user needs and business objectives.</p>
-                    </div>
-                </div>
-                <!-- Skill Card 2 -->
-                <div class="card p-6 flex items-start space-x-4 bg-green-50 hover:shadow-lg transition-shadow duration-300">
-                    <svg class="w-8 h-8 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.747 0-3.332.477-4.5 1.253"></path></svg>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Vendor Management</h4>
-                        <p class="text-gray-600">Building and maintaining strong relationships with external partners, ensuring service level agreements are met and optimized.</p>
-                    </div>
-                </div>
-                <!-- Skill Card 3 -->
-                <div class="card p-6 flex items-start space-x-4 bg-blue-50 hover:shadow-lg transition-shadow duration-300">
-                    <svg class="w-8 h-8 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6a2 2 0 012-2h2a2 2 0 012 2v6m-4 0v1a3 3 0 003 3h1a3 3 0 003-3V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a3 3 0 003 3h1a3 3 0 003-3m0 0h3"></path></svg>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Reports & Dashboards</h4>
-                        <p class="text-gray-600">Designing and interpreting data visualizations to track KPIs, identify trends, and support data-driven decision-making.</p>
-                    </div>
-                </div>
-                <!-- Skill Card 4 -->
-                <div class="card p-6 flex items-start space-x-4 bg-yellow-50 hover:shadow-lg transition-shadow duration-300">
-                    <svg class="w-8 h-8 text-yellow-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l2.879-2.879m0 0l5.742-5.742M14.742 17H19a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h10l-2.879-2.879"></path></svg>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Investigation</h4>
-                        <p class="text-gray-600">Proficient in conducting thorough investigations to uncover facts, assess liability, and ensure fair outcomes.</p>
-                    </div>
-                </div>
-                <!-- Skill Card 5 -->
-                <div class="card p-6 flex items-start space-x-4 bg-red-50 hover:shadow-lg transition-shadow duration-300">
-                    <svg class="w-8 h-8 text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Communication</h4>
-                        <p class="text-gray-600">Articulate and empathetic communication with stakeholders, policyholders, and team members.</p>
-                    </div>
-                </div>
-                <!-- Skill Card 6 -->
-                <div class="card p-6 flex items-start space-x-4 bg-teal-50 hover:shadow-lg transition-shadow duration-300">
-                    <svg class="w-8 h-8 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">File Planning & Time Management</h4>
-                        <p class="text-gray-600">Organized approach to managing multiple cases, ensuring timely progression and adherence to deadlines.</p>
-                    </div>
-                </div>
-                <!-- Skill Card 7 -->
-                <div class="card p-6 flex items-start space-x-4 bg-orange-50 hover:shadow-lg transition-shadow duration-300">
-                    <svg class="w-8 h-8 text-orange-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2m-2-4l4 4m0 0l4 4m-4-4l-4 4m4-4V9a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2"></path></svg>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Financial Analysis</h4>
-                        <p class="text-gray-600">Analyzing financial data to assess claim values, manage reserves, and identify cost-saving opportunities.</p>
-                    </div>
-                </div>
-                <!-- Skill Card 8 -->
-                <div class="card p-6 flex items-start space-x-4 bg-indigo-50 hover:shadow-lg transition-shadow duration-300">
-                    <svg class="w-8 h-8 text-indigo-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Data Analysis</h4>
-                        <p class="text-gray-600">Interpreting complex datasets to identify trends, patterns, and insights that inform strategic decisions.</p>
-                    </div>
-                </div>
-                <!-- Skill Card 9 -->
-                <div class="card p-6 flex items-start space-x-4 bg-pink-50 hover:shadow-lg transition-shadow duration-300">
-                    <svg class="w-8 h-8 text-pink-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Risk Management</h4>
-                        <p class="text-gray-600">Identifying, assessing, and mitigating potential risks within claims operations and product lifecycles.</p>
-                    </div>
+        <!-- Header Section -->
+        <header class="flex flex-col sm:flex-row items-center justify-center sm:justify-between text-center sm:text-left py-8">
+            <div class="mb-4 sm:mb-0">
+                <img src="https://placehold.co/200x200/94a3b8/ffffff?text=Your+Image" alt="Emmanuel Mato" class="rounded-full w-32 h-32 mx-auto sm:mx-0 object-cover border-4 border-white shadow-lg">
+            </div>
+            <div class="flex-grow sm:ml-6">
+                <h1 class="text-4xl font-bold text-gray-900">Emmanuel Mato</h1>
+                <p class="text-xl text-gray-600 mt-2">Claims Product Owner & Analyst</p>
+                <p class="text-md text-gray-500 mt-1">Moncton, NB, Canada</p>
+                <div class="flex justify-center sm:justify-start items-center mt-3 space-x-4">
+                    <a href="https://www.linkedin.com/in/emmanuelmato" target="_blank" class="icon-link text-2xl" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:emmanuel.t.mato@gmail.com" class="icon-link text-2xl" aria-label="Email Address">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <span class="text-gray-500 text-lg"><i class="fas fa-phone mr-1"></i> (506) 688-4735</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Portfolio Projects Section -->
-    <section id="portfolio" class="py-16 px-6 sm:px-8 lg:px-12 bg-gray-100">
-        <div class="container">
-            <h3 class="section-heading">My Future Portfolio Projects</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 (Placeholder) -->
-                <div class="card">
-                    <img src="https://placehold.co/600x400/e2e8f0/64748b?text=Project+Image+1" alt="Project 1 Thumbnail" class="rounded-t-lg mb-4 w-full h-48 object-cover">
-                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Claims Workflow Optimization Tool</h4>
-                    <p class="text-gray-600 mb-4">A project focusing on streamlining the claims process through automation and intelligent task routing, leveraging my product owner skills.</p>
-                    <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md text-sm transition-colors duration-300">View Project Details</a>
-                </div>
-                <!-- Project Card 2 (Placeholder) -->
-                <div class="card">
-                    <img src="https://placehold.co/600x400/e2e8f0/64748b?text=Project+Image+2" alt="Project 2 Thumbnail" class="rounded-t-lg mb-4 w-full h-48 object-cover">
-                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Vendor Performance Dashboard</h4>
-                    <p class="text-gray-600 mb-4">Development of an interactive dashboard to monitor and analyze vendor performance metrics, showcasing my reports and vendor management skills.</p>
-                    <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md text-sm transition-colors duration-300">View Project Details</a>
-                </div>
-                <!-- Project Card 3 (Placeholder) -->
-                <div class="card">
-                    <img src="https://placehold.co/600x400/e2e8f0/64748b?text=Project+Image+3" alt="Project 3 Thumbnail" class="rounded-t-lg mb-4 w-full h-48 object-cover">
-                    <h4 class="text-2xl font-semibold text-gray-800 mb-2">Fraud Detection & Prevention Initiative</h4>
-                    <p class="text-gray-600 mb-4">Outline of a project focusing on implementing advanced analytics and machine learning to identify and prevent fraudulent claims.</p>
-                    <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md text-sm transition-colors duration-300">View Project Details</a>
-                </div>
-                <!-- Add more project cards as needed -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Get in Touch Section -->
-    <section id="contact" class="py-16 px-6 sm:px-8 lg:px-12 bg-white">
-        <div class="container text-center">
-            <h3 class="section-heading">Get In Touch</h3>
-            <p class="text-xl text-gray-700 max-w-2xl mx-auto mb-8">
-                I'm excited to connect and discuss how my blend of claims expertise and product ownership skills can benefit your team.
+        <!-- Professional Summary Section -->
+        <section class="my-8 card">
+            <h2 class="text-2xl font-semibold section-heading">Professional Summary</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Finance and accounting professional with 10+ years of experience in financial reporting, risk management, compliance, and operational analysis. Expertise in financial reconciliation, regulatory reporting, MS Excel, and data analysis. Proven ability to streamline financial processes, ensure compliance, and drive operational efficiencies. Holds a Chartered Accountant (CA), Chartered Insurance Professional (CIP), and an MBA. As a Claims Product Owner and Analyst, I bring a unique blend of financial acumen and technical expertise in Guidewire ClaimCenter and Salesforce CRM to optimize claims processes and deliver data-driven solutions.
             </p>
-            <div class="flex flex-col items-center space-y-6">
-                <!-- Email Contact -->
-                <a href="mailto:emmanuel.t.mato.com" class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-4 px-10 rounded-full text-xl shadow-lg transform transition duration-300 ease-in-out hover:scale-105 flex items-center space-x-3">
-                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                    <span>emmanuel.t.mato.com</span>
-                </a>
-                <!-- LinkedIn Contact -->
-                <a href="https://www.linkedin.com/in/emmanuelmato" target="_blank" rel="noopener noreferrer" class="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-4 px-10 rounded-full text-xl shadow-lg transform transition duration-300 ease-in-out hover:scale-105 flex items-center space-x-3">
-                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.3 0H3.7C1.65 0 0 1.65 0 3.7v12.6C0 18.35 1.65 20 3.7 20h12.6c2.05 0 3.7-1.65 3.7-3.7V3.7C20 1.65 18.35 0 16.3 0zM6 17H3V7h3v10zM4.5 5.5c-1.12 0-2-.88-2-2s.88-2 2-2 2 .88 2 2-.88 2-2 2zM17 17h-3V11c0-1.66-1.34-3-3-3s-3 1.34-3 3v6H8V7h3v1.5c.67-1.22 2.37-1.5 3.5-1.5 2.76 0 5 2.24 5 5v5z" clip-rule="evenodd"></path></svg>
-                    <span>LinkedIn Profile</span>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="my-8 card">
+            <h2 class="text-2xl font-semibold section-heading">Skills & Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-medium text-lg text-gray-800 mb-2">Claims & Insurance</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Accident Benefits</li>
+                        <li>Claims Processing & Resolution</li>
+                        <li>Risk Management</li>
+                        <li>Regulatory Compliance</li>
+                        <li>Policy Management</li>
+                        <li>Financial Risk Assessments</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-medium text-lg text-gray-800 mb-2">Data & Analytics</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Financial Data Analysis & Reporting</li>
+                        <li>MS Excel (Data Analysis)</li>
+                        <li>Reports & Dashboards</li>
+                        <li>Process Optimization</li>
+                        <li>Data Migration</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-medium text-lg text-gray-800 mb-2">Systems & Tools</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Salesforce CRM (Admin, Sales, Service Cloud)</li>
+                        <li>Guidewire ClaimCenter</li>
+                        <li>Jira & Visio (Project Management)</li>
+                        <li>Financial Reporting Tools</li>
+                        <li>Automated Workflows</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-medium text-lg text-gray-800 mb-2">Business & Operations</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Vendor Management & Negotiation</li>
+                        <li>Investigations</li>
+                        <li>Operational Efficiency</li>
+                        <li>Financial Reconciliation</li>
+                        <li>AML Reporting</li>
+                        <li>Stakeholder Engagement</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section (Concise for portfolio) -->
+        <section class="my-8 card">
+            <h2 class="text-2xl font-semibold section-heading">Professional Experience</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800">CO-OPERATORS GENERAL INSURANCE</h3>
+                    <p class="text-lg text-gray-600">Accident Benefits Claims Adjuster | Moncton, NB | 2024 – Present</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2">
+                        <li>Conducted financial data analysis and reporting to enhance accuracy in claims processing.</li>
+                        <li>Improved claims resolution efficiency by 20% through process optimization.</li>
+                        <li>Led initiatives that reduced outstanding claim files by 69%, optimizing operational efficiency.</li>
+                        <li>Analyzed vendor payment reports and negotiated settlements, achieving a 65% claim closure rate.</li>
+                        <li>Implemented internal controls to track financial reporting accuracy and compliance.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800">CO-OPERATORS GENERAL INSURANCE</h3>
+                    <p class="text-lg text-gray-600">Licensed Insurance Representative | Moncton, NB | 2020 – 2024</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2">
+                        <li>Utilized Salesforce CRM for risk management, increasing lead conversion rates by 30%.</li>
+                        <li>Contributed to process automation, improving policy management efficiency by 15%.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800">BLACKFORCE CONSULTING</h3>
+                    <p class="text-lg text-gray-600">Salesforce Administrator (Part-Time) | Remote | 2021 – 2023</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2">
+                        <li>Developed automated financial reporting workflows, reducing lead conversion time by 45%.</li>
+                        <li>Managed data migration projects, maintaining 99% accuracy in financial reporting.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Projects Section -->
+        <section class="my-8 card">
+            <h2 class="text-2xl font-semibold section-heading">Portfolio Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1: Data Analysis Dashboard -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Claims Data Analysis Dashboard</h3>
+                    <p class="text-gray-700 mb-4">
+                        A dynamic dashboard designed to visualize key claims metrics, identify trends, and provide actionable insights for process improvement. Features interactive graphs and drill-down capabilities.
+                    </p>
+                    <!-- Placeholder for Chart Image/Embed -->
+                    <div class="bg-gray-200 h-64 rounded-md flex items-center justify-center text-gray-500 mb-4">
+                        <p class="text-center">Placeholder for Interactive 3D Chart / Dashboard Sample</p>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        <strong>Technologies:</strong> MS Excel (Advanced), Power BI (or similar), Data Visualization Tools.
+                    </p>
+                    <!-- Future link to live project or more details -->
+                    <a href="#" class="inline-block mt-4 text-blue-600 hover:underline">View Case Study / Live Demo (Coming Soon)</a>
+                </div>
+
+                <!-- Project 2: Vendor Payment Optimization -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Vendor Payment Optimization Initiative</h3>
+                    <p class="text-gray-700 mb-4">
+                        Streamlined vendor payment processes, resulting in significant cost savings and improved settlement rates. Involved detailed analysis of payment reports and negotiation strategies.
+                    </p>
+                    <!-- Placeholder for Chart Image/Embed -->
+                    <div class="bg-gray-200 h-64 rounded-md flex items-center justify-center text-gray-500 mb-4">
+                        <p class="text-center">Placeholder for Performance Metrics Graph</p>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        <strong>Skills Applied:</strong> Vendor Management, Negotiation, Financial Data Analysis, Process Improvement.
+                    </p>
+                    <!-- Future link to live project or more details -->
+                    <a href="#" class="inline-block mt-4 text-blue-600 hover:underline">Read More (Coming Soon)</a>
+                </div>
+
+                <!-- Project 3: Guidewire ClaimCenter Implementation/Optimization -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Guidewire ClaimCenter Workflow Enhancements</h3>
+                    <p class="text-gray-700 mb-4">
+                        Demonstrations of optimized workflows and custom configurations within Guidewire ClaimCenter to improve claims handling efficiency and data accuracy.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="aspect-video bg-gray-200 rounded-md flex items-center justify-center text-gray-500">
+                             <iframe class="w-full h-full rounded-md" src="https://www.youtube.com/embed/your_guidewire_video_id_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="aspect-video bg-gray-200 rounded-md flex items-center justify-center text-gray-500">
+                            <iframe class="w-full h-full rounded-md" src="https://www.youtube.com/embed/your_guidewire_video_id_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-4">
+                        <strong>Key Areas:</strong> Claims Lifecycle Management, Rules Engine, Integrations, Reporting.
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">
+                         (Replace "your_guidewire_video_id_1" and "your_guidewire_video_id_2" with actual YouTube video IDs)
+                    </p>
+                </div>
+
+                <!-- Future Project 4: Salesforce CRM Automation -->
+                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Salesforce CRM Lead Conversion Automation</h3>
+                    <p class="text-gray-700 mb-4">
+                        Implemented automated workflows within Salesforce CRM, significantly reducing lead conversion time and boosting overall efficiency.
+                    </p>
+                    <!-- Placeholder for Chart Image/Embed -->
+                    <div class="bg-gray-200 h-64 rounded-md flex items-center justify-center text-gray-500 mb-4">
+                        <p class="text-center">Placeholder for CRM Performance Metrics</p>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        <strong>Skills Applied:</strong> Salesforce Administration, Process Automation, CRM Optimization, Data Accuracy.
+                    </p>
+                    <!-- Future link to live project or more details -->
+                    <a href="#" class="inline-block mt-4 text-blue-600 hover:underline">Explore Project (Coming Soon)</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section class="my-8 card text-center">
+            <h2 class="text-2xl font-semibold section-heading">Contact Me</h2>
+            <p class="text-lg text-gray-700 mb-4">I'm always open to discussing new projects, collaborations, or opportunities.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-blue-600 text-3xl mr-3"></i>
+                    <p class="text-lg text-gray-800">emmanuel.t.mato@gmail.com</p>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt text-blue-600 text-3xl mr-3"></i>
+                    <p class="text-lg text-gray-800">(506) 688-4735</p>
+                </div>
+            </div>
+            <div class="mt-6">
+                <a href="https://www.linkedin.com/in/emmanuelmato" target="_blank" class="btn-primary inline-flex items-center">
+                    <i class="fab fa-linkedin-in mr-2"></i> Connect on LinkedIn
                 </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-8 text-center">
-        <div class="container">
-            <p>&copy; 2025 Emmanuel Mato. All rights reserved.</p>
-            <p class="mt-2 text-sm text-gray-400">Built with <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-400">Tailwind CSS</a></p>
-        </div>
-    </footer>
-
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm mt-12 py-4 border-t border-gray-200">
+            &copy; 2025 Emmanuel Mato. All rights reserved.
+        </footer>
+    </div>
 </body>
 </html>
