@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emmanuel Mato – Claims Product Owner & Analyst</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
-  <div class="max-w-5xl mx-auto px-6 py-12">
+  <div class="max-w-6xl mx-auto px-6 py-12">
 
     <!-- Header -->
     <header class="text-center mb-12">
@@ -17,59 +18,61 @@
       <p class="text-xl">Claims Product Owner & Analyst</p>
       <p class="text-gray-600">📍 Moncton, NB | ✉️ <a href="mailto:emmanuel.t.mato@gmail.com" class="text-blue-600 underline">emmanuel.t.mato@gmail.com</a></p>
       <p class="text-gray-600">🔗 <a href="https://www.linkedin.com/in/emmanuelmato" class="text-blue-600 underline" target="_blank">linkedin.com/in/emmanuelmato</a></p>
-      <p class="mt-3 text-lg text-gray-700 italic">"I help insurance teams and claims departments improve process efficiency and data visibility using Salesforce, Guidewire, and advanced reporting tools."</p>
     </header>
 
-    <!-- Projects Section -->
+    <!-- Portfolio Projects -->
     <section class="mb-16">
-      <h2 class="text-3xl font-semibold mb-6 border-b pb-2">Featured Projects</h2>
+      <h2 class="text-3xl font-semibold mb-6 border-b pb-2">Portfolio Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-      <!-- Project 1 -->
-      <div class="bg-white p-6 rounded shadow mb-6">
-        <h3 class="text-xl font-bold text-gray-800 mb-2">1. Claims Data Analysis Dashboard</h3>
-        <p class="mb-2">I designed a dynamic dashboard for visualizing accident benefits (AB) claims trends. It included KPIs like resolution time, payment ratios, and claims closure rates.</p>
-        <p class="text-sm text-gray-600 mb-1">✅ What I learned: MS Excel power queries, pivot models, stakeholder reporting</p>
-        <p class="text-sm text-gray-600">🚀 Outcome: Helped reduce unresolved claims by 69%</p>
-      </div>
+        <!-- Project 1 -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold mb-2">Claims Data Analysis Dashboard</h3>
+          <p class="mb-3">Dynamic dashboard with KPIs including claim resolution time and payout accuracy. Created using Excel, Power BI, and custom visualizations.</p>
+          <canvas id="claimsChart" class="w-full h-64"></canvas>
+        </div>
 
-      <!-- Project 2 -->
-      <div class="bg-white p-6 rounded shadow mb-6">
-        <h3 class="text-xl font-bold text-gray-800 mb-2">2. Vendor Payment Optimization</h3>
-        <p class="mb-2">Analyzed vendor payment reports and initiated new negotiation workflows. Used Excel and Salesforce CRM for insights.</p>
-        <p class="text-sm text-gray-600 mb-1">🧠 Thought process: Find delay triggers → analyze settlement speed → close gaps</p>
-        <p class="text-sm text-gray-600">💡 Result: 65% improvement in payment closure efficiency</p>
-      </div>
+        <!-- Project 2 -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold mb-2">Vendor Payment Optimization</h3>
+          <p class="mb-3">Reduced payment delays through insights and automation. Key achievement: 65% closure efficiency improvement.</p>
+          <canvas id="vendorChart" class="w-full h-64"></canvas>
+        </div>
 
-      <!-- Project 3 -->
-      <div class="bg-white p-6 rounded shadow mb-6">
-        <h3 class="text-xl font-bold text-gray-800 mb-2">3. Guidewire ClaimCenter Workflow Enhancements</h3>
-        <p class="mb-2">Worked on optimizing task routing and auto-notifications in Guidewire ClaimCenter. Enhanced the FNOL (First Notice of Loss) and triage steps.</p>
-        <p class="text-sm text-gray-600">📽️ Video demos: <a class="text-blue-600 underline" href="https://www.youtube.com/results?search_query=guidewire+claimcenter+tutorial" target="_blank">Guidewire Tutorials</a></p>
+        <!-- Project 3 -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold mb-2">Guidewire ClaimCenter Enhancements</h3>
+          <p class="mb-3">Implemented rules engine improvements and streamlined FNOL processes. See sample training demos:</p>
+          <ul class="list-disc ml-5 text-blue-600">
+            <li><a href="https://www.youtube.com/watch?v=XYR1tH5cFGg" target="_blank">Guidewire Overview</a></li>
+            <li><a href="https://www.youtube.com/results?search_query=guidewire+claimcenter+demo" target="_blank">More Demos</a></li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
     <!-- Testimonials -->
     <section class="mb-16">
       <h2 class="text-3xl font-semibold mb-6 border-b pb-2">Testimonials</h2>
-
       <div class="space-y-6">
         <div class="bg-gray-50 p-4 rounded shadow">
-          <p class="italic">"Emmanuel helped streamline our vendor payment process. We saw measurable improvement in closure rates within 30 days. A true claims expert."</p>
+          <p class="italic">"Emmanuel helped streamline our vendor payment process. We saw measurable improvement in closure rates within 30 days."</p>
           <p class="mt-2 font-semibold text-blue-800">— Project Manager, Co-operators Insurance</p>
         </div>
         <div class="bg-gray-50 p-4 rounded shadow">
-          <p class="italic">"Thanks to Emmanuel’s dashboards, we identified bottlenecks and improved client satisfaction scores."</p>
-          <p class="mt-2 font-semibold text-blue-800">— Senior Analyst, Insurance Operations</p>
+          <p class="italic">"Thanks to Emmanuel’s dashboards, we improved client satisfaction and reduced reporting errors."</p>
+          <p class="mt-2 font-semibold text-blue-800">— Senior Analyst, Insurance Ops</p>
         </div>
       </div>
     </section>
 
     <!-- Call to Action -->
     <section class="text-center mb-16 bg-white p-6 rounded shadow">
-      <h2 class="text-2xl font-semibold mb-2">Let’s Work Together</h2>
-      <p class="mb-4">Book a free consultation or connect with me for your next claims innovation project.</p>
-      <a href="mailto:emmanuel.t.mato@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition inline-block">
-        <i class="fas fa-calendar-check mr-2"></i> Book a Call
+      <h2 class="text-2xl font-semibold mb-4">Let’s Work Together</h2>
+      <p class="mb-4">Looking to optimize claims operations or implement robust reporting? Let’s connect.</p>
+      <a href="mailto:emmanuel.t.mato@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+        <i class="fas fa-calendar-check mr-2"></i> Book a Free Consultation
       </a>
     </section>
 
@@ -82,7 +85,32 @@
     <footer class="text-center text-gray-500 text-sm border-t pt-6">
       &copy; 2025 Emmanuel Mato. All rights reserved.
     </footer>
-
   </div>
+
+  <!-- Charts Scripts -->
+  <script>
+    new Chart(document.getElementById("claimsChart"), {
+      type: 'bar',
+      data: {
+        labels: ["Q1", "Q2", "Q3", "Q4"],
+        datasets: [{
+          label: "Resolved Claims",
+          backgroundColor: "#2563eb",
+          data: [34, 48, 52, 60]
+        }]
+      }
+    });
+
+    new Chart(document.getElementById("vendorChart"), {
+      type: 'doughnut',
+      data: {
+        labels: ["Negotiated", "Pending", "Disputed"],
+        datasets: [{
+          data: [65, 25, 10],
+          backgroundColor: ["#10b981", "#facc15", "#ef4444"]
+        }]
+      }
+    });
+  </script>
 </body>
 </html>
